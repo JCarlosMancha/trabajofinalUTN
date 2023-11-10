@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JUGUEMOS UN POCO</title>
+</head>
+<body>
+    <nav id="nav">
+        <div id="logo">
+			<a href="index.html">
+				<svg width="200" height="80">
+					<rect x="45" y="5" width="60" height="35" rx="5" id="elemento1" fill="#F0E9D2"></rect>
+					<rect x="50" y="10" width="50" height="25" rx="5" id="elemento2" fill="#495579"></rect>
+					<polygon points="55 45 ,95 45,115 62,30 62" fill="#F0E9D2" id="poli1"></polygon>
+					<polygon points="57 48 ,92 48,104 58,43 58" fill="#495579" id="poli2"></polygon>
+				</svg>
+			</a>
+		</div>
+        <ul>
+            <li><a class="item-link active" href="historia.html">HISTORIA</a></li>
+            <li><a class="item-link" href="poneraprueba.html">JUGUEMOS</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>JUGUEMOS UN POCO</h1>
+    </header>
+    <div id="content" class="max-1200">
+        <div id="content-container1" class="content-container sector1">
+			<h2 style="text-align: center;">Armemos el rompecabezas y veamos que imagen es...</h2>
+        </div>
+        <div id="content-container2" class="caja-contenedor sector2">
+		    <div class="column33 caja" id="soltar1">
+				<p>Arrastre y<br>suelte la imágene aquí</p>
+			</div>
+		    <div class="column33 caja" id="soltar2">
+				<p>Arrastre y<br>suelte la imágene aquí</p>
+			</div>
+		    <div class="column33 caja" id="soltar3">
+				<p>Arrastre y<br>suelte la imágene aquí</p>
+			</div>			
+        </div>
+		<div id="content-container3" class="content-container sector3">
+		    <div class="column33">
+				<img id="imagen1" src="./assets/imagenes/rompe2.png" alt="imagen-rompecabezas" draggable="true">
+			</div>
+		    <div class="column33">
+				<img id="imagen2" src="./assets/imagenes/rompe1.png" alt="imagen-rompecabezas" draggable="true">
+			</div>
+		    <div class="column33">
+				<img id="imagen3" src="./assets/imagenes/rompe3.png" alt="imagen-rompecabezas" draggable="true">
+			</div>			
+        </div>
+		<button onclick="reinicio()" class="botonesVideo reinicio">Reiniciar</button>
+    </div>
+    <footer>
+        <div id="footer-container">
+            <div class="column">
+			    <img class="logo-footer" src="assets/imagenes/logo.png" alt="logo">
+                <p>PROGRAMACION E HISTORIA</p>
+            </div>
+            <div class="column">
+                <p>Sitio con fines educativos - Creado por M.Victoria Lopez</p>
+            </div>
+        </div>
+    </footer>
+<script src="./script.js"></script>	
+</body>
+</html>
