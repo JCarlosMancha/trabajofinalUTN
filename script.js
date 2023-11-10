@@ -65,8 +65,6 @@ function habilitarArrastrarYSoltar(idImagen) {
   elementoImagen.setAttribute("draggable", "true");
   elementoImagen.addEventListener("dragstart", comenzarArrastre);
 }
-
-// Agregar el evento de inicio de arrastre a las imágenes
 habilitarArrastrarYSoltar("imagen1");
 habilitarArrastrarYSoltar("imagen2");
 habilitarArrastrarYSoltar("imagen3");
